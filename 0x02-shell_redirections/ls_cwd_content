@@ -1,0 +1,14 @@
+total 36
+drwxr-xr-x 1 siti siti  4096 May 15 17:10 .
+drwxr-xr-x 1 siti siti  4096 May 15 14:18 ..
+-rwxr--r-- 1 siti siti    32 May 15 14:33 0-hello_world
+-rwxr--r-- 1 siti siti    27 May 15 15:16 1-confused_smiley
+-rwxr--r-- 1 siti siti    28 May 15 15:23 2-hellofile
+-rwxr--r-- 1 siti siti    38 May 15 15:29 3-twofiles
+-rwxr--r-- 1 siti siti    29 May 15 15:34 4-lastlines
+-rwxr--r-- 1 siti siti    29 May 15 15:36 5-firstlines
+-rwxr--r-- 1 siti siti    40 May 15 15:45 6-third_line
+-rwxr--r-- 1 siti siti    76 May 15 16:53 7-file
+-rwxr--r-- 1 siti siti    36 May 15 17:09 8-cwd_state
+-rw-r--r-- 1 siti siti 34273 May 15 14:24 README.md
+-rw-r--r-- 1 siti siti     0 May 15 17:10 ls_cwd_content
