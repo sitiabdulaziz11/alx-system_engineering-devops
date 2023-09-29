@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
+
+This is my SSH RSA first created public key.
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOXY/fkb6xu8C+UMPZrFag2zGVxZTX9SU8qKSvwvM1ya87SYxf1ov/zc0BiaCR2yBzo9jQP8lHp0BscvbqZbqTOSSq/bhXqAo9NT5J+P8+dZLHBUYwkPLjuex7tkegsle7/ND3ubRGfDMf4Q+75RaBbn/7pBj1zG4NNCC/86X9oUhSTtuqUaMRqarIeXSYFybBwxD8QUQZ2gX9c/82WokcQNhhUUxrUI0iTujpFUw4ruVNXorDTkVtmGewnCdGOvhe+xJ6OLSGRzrnnB6di/RqCKjmfx7LvPejafc/621m+2kKjZ+VkgQnzTwkht0QbIMbCwk1vZ1av3U4kj0nZ2OJ vagrant@ubuntu-focal
