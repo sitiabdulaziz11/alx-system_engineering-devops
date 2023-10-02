@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Bash script that display the content
+# of the current directory
+
+for f in *;do
+	if [[ ! "$f" == .* ]]; then
+	   name="${f#*-}"
+	   echo "$name"
+	fi
+done
