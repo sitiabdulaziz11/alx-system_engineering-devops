@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Bash script that creates an RSA key pair.
+
+priv_key="school"
+pub_key="${priv_key}.pub"
+ssh-keygen -t rsa -b 4096 -f "${priv_key}" -N "betty"
