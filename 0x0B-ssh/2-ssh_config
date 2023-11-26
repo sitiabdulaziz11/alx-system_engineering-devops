@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# SSH configuration file for the local SSH client.
+
+Host Alx_server
+  HostName 3.89.146.250
+  user ubuntu
+  identityFile /root/.ssh/school
+  PasswordAuthentication no
