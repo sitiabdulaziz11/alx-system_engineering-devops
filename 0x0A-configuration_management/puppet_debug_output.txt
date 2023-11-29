@@ -1,0 +1,524 @@
+[0;36mDebug: Runtime environment: puppet_version=5.5.10, ruby_version=2.7.0, run_mode=user, default_encoding=US-ASCII[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Loading external facts from /var/cache/puppet/facts.d[0m
+[0;36mDebug: Facter: loading external fact directories from config file[0m
+[0;36mDebug: Facter: fact "facterversion" has resolved to "3.11.0".[0m
+[0;36mDebug: Facter: skipping external facts for "/opt/puppetlabs/facter/facts.d": No such file or directory[0m
+[0;36mDebug: Facter: skipping external facts for "/etc/facter/facts.d": No such file or directory[0m
+[0;36mDebug: Facter: skipping external facts for "/etc/puppetlabs/facter/facts.d": No such file or directory[0m
+[0;36mDebug: Facter: searching "/var/cache/puppet/facts.d" for external facts.[0m
+[0;36mDebug: Facter: no external facts were found.[0m
+[0;36mDebug: Facter: loading all custom facts.[0m
+[0;36mDebug: Facter: loading custom fact directories from config file[0m
+[0;36mDebug: Facter: fact "agent_specified_environment" resolved to null and will not be added.[0m
+[0;36mDebug: Facter: fact "puppetversion" has resolved to "5.5.10".[0m
+[0;36mDebug: Facter: resolving ruby facts.[0m
+[0;36mDebug: Facter: fact "rubyplatform" has resolved to "x86_64-linux-gnu".[0m
+[0;36mDebug: Facter: fact "rubysitedir" has resolved to "/usr/local/lib/site_ruby/2.7.0".[0m
+[0;36mDebug: Facter: fact "rubyversion" has resolved to "2.7.0".[0m
+[0;36mDebug: Facter: fact "ruby" has resolved to {
+  platform => "x86_64-linux-gnu",
+  sitedir => "/usr/local/lib/site_ruby/2.7.0",
+  version => "2.7.0"
+}.[0m
+[0;36mDebug: Facter: resolving path facts.[0m
+[0;36mDebug: Facter: fact "path" has resolved to "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin".[0m
+[0;36mDebug: Facter: resolving EC2 facts.[0m
+[0;36mDebug: Facter: resolving virtualization facts.[0m
+[0;36mDebug: Facter: fact "is_virtual" has resolved to true.[0m
+[0;36mDebug: Facter: fact "virtual" has resolved to "docker".[0m
+[0;36mDebug: Facter: EC2 facts are unavailable: not running under an EC2 instance.[0m
+[0;36mDebug: Facter: resolving GCE facts.[0m
+[0;36mDebug: Facter: not running under a GCE instance.[0m
+[0;36mDebug: Facter: resolving augeas facts.[0m
+[0;36mDebug: Facter: executing command: augparse --version[0m
+[0;36mDebug: Facter: augparse was not found on the PATH.[0m
+[0;36mDebug: Facter: resolving kernel facts.[0m
+[0;36mDebug: Facter: fact "kernel" has resolved to "Linux".[0m
+[0;36mDebug: Facter: fact "kernelrelease" has resolved to "5.15.133.1-microsoft-standard-WSL2".[0m
+[0;36mDebug: Facter: fact "kernelmajversion" has resolved to "5.15".[0m
+[0;36mDebug: Facter: fact "kernelversion" has resolved to "5.15.133.1".[0m
+[0;36mDebug: Facter: resolving operating system facts.[0m
+[0;36mDebug: Facter: executing command: /usr/bin/lsb_release -a[0m
+[0;36mDebug: Facter: Distributor ID:	Ubuntu[0m
+[0;36mDebug: Facter: Description:	Ubuntu 20.04.6 LTS[0m
+[0;36mDebug: Facter: Release:	20.04[0m
+[0;36mDebug: Facter: Codename:	focal[0m
+[0;36mDebug: Facter: No LSB modules are available.[0m
+[0;36mDebug: Facter: process exited with status code 0.[0m
+[0;36mDebug: Facter: fact "osfamily" has resolved to "Debian".[0m
+[0;36mDebug: Facter: fact "operatingsystemmajrelease" has resolved to "20.04".[0m
+[0;36mDebug: Facter: fact "operatingsystemrelease" has resolved to "20.04".[0m
+[0;36mDebug: Facter: fact "hardwaremodel" has resolved to "x86_64".[0m
+[0;36mDebug: Facter: fact "architecture" has resolved to "amd64".[0m
+[0;36mDebug: Facter: fact "lsbdistid" has resolved to "Ubuntu".[0m
+[0;36mDebug: Facter: fact "lsbdistcodename" has resolved to "focal".[0m
+[0;36mDebug: Facter: fact "lsbdistdescription" has resolved to "Ubuntu 20.04.6 LTS".[0m
+[0;36mDebug: Facter: fact "lsbmajdistrelease" has resolved to "20.04".[0m
+[0;36mDebug: Facter: fact "lsbdistrelease" has resolved to "20.04".[0m
+[0;36mDebug: Facter: fact "operatingsystem" has resolved to "Ubuntu".[0m
+[0;36mDebug: Facter: fact "selinux" has resolved to false.[0m
+[0;36mDebug: Facter: fact "os" has resolved to {
+  architecture => "amd64",
+  distro => {
+    codename => "focal",
+    description => "Ubuntu 20.04.6 LTS",
+    id => "Ubuntu",
+    release => {
+      full => "20.04",
+      major => "20.04"
+    }
+  },
+  family => "Debian",
+  hardware => "x86_64",
+  name => "Ubuntu",
+  release => {
+    full => "20.04",
+    major => "20.04"
+  },
+  selinux => {
+    enabled => false
+  }
+}.[0m
+[0;36mDebug: Facter: resolving networking facts.[0m
+[0;36mDebug: Facter: Could not find the 'ip' command. Network bindings will not be populated from routing table[0m
+[0;36mDebug: Facter: hostname "15e50e5a8aec" could not be resolved: hostname may not be externally resolvable.[0m
+[0;36mDebug: Facter: searching "/var/lib/dhclient" for dhclient lease files.[0m
+[0;36mDebug: Facter: searching "/var/lib/dhcp" for dhclient lease files.[0m
+[0;36mDebug: Facter: searching "/var/lib/dhcp3" for dhclient lease files.[0m
+[0;36mDebug: Facter: searching "/var/lib/NetworkManager" for dhclient lease files.[0m
+[0;36mDebug: Facter: searching "/var/db" for dhclient lease files.[0m
+[0;36mDebug: Facter: executing command: dhcpcd -U eth0[0m
+[0;36mDebug: Facter: dhcpcd was not found on the PATH.[0m
+[0;36mDebug: Facter: executing command: dhcpcd -U lo[0m
+[0;36mDebug: Facter: dhcpcd was not found on the PATH.[0m
+[0;36mDebug: Facter: fact "ipaddress_eth0" has resolved to "172.17.0.2".[0m
+[0;36mDebug: Facter: fact "ipaddress" has resolved to "172.17.0.2".[0m
+[0;36mDebug: Facter: fact "netmask_eth0" has resolved to "255.255.0.0".[0m
+[0;36mDebug: Facter: fact "netmask" has resolved to "255.255.0.0".[0m
+[0;36mDebug: Facter: fact "network_eth0" has resolved to "172.17.0.0".[0m
+[0;36mDebug: Facter: fact "network" has resolved to "172.17.0.0".[0m
+[0;36mDebug: Facter: fact "macaddress_eth0" has resolved to "02:42:ac:11:00:02".[0m
+[0;36mDebug: Facter: fact "macaddress" has resolved to "02:42:ac:11:00:02".[0m
+[0;36mDebug: Facter: fact "mtu_eth0" has resolved to 1500.[0m
+[0;36mDebug: Facter: fact "ipaddress_lo" has resolved to "127.0.0.1".[0m
+[0;36mDebug: Facter: fact "netmask_lo" has resolved to "255.0.0.0".[0m
+[0;36mDebug: Facter: fact "network_lo" has resolved to "127.0.0.0".[0m
+[0;36mDebug: Facter: fact "mtu_lo" has resolved to 65536.[0m
+[0;36mDebug: Facter: fact "hostname" has resolved to "15e50e5a8aec".[0m
+[0;36mDebug: Facter: fact "fqdn" has resolved to "15e50e5a8aec".[0m
+[0;36mDebug: Facter: fact "interfaces" has resolved to "eth0,lo".[0m
+[0;36mDebug: Facter: fact "networking" has resolved to {
+  fqdn => "15e50e5a8aec",
+  hostname => "15e50e5a8aec",
+  interfaces => {
+    eth0 => {
+      bindings => [
+        {
+          address => "172.17.0.2",
+          netmask => "255.255.0.0",
+          network => "172.17.0.0"
+        }
+      ],
+      ip => "172.17.0.2",
+      mac => "02:42:ac:11:00:02",
+      mtu => 1500,
+      netmask => "255.255.0.0",
+      network => "172.17.0.0"
+    },
+    lo => {
+      bindings => [
+        {
+          address => "127.0.0.1",
+          netmask => "255.0.0.0",
+          network => "127.0.0.0"
+        }
+      ],
+      ip => "127.0.0.1",
+      mtu => 65536,
+      netmask => "255.0.0.0",
+      network => "127.0.0.0"
+    }
+  },
+  ip => "172.17.0.2",
+  mac => "02:42:ac:11:00:02",
+  mtu => 1500,
+  netmask => "255.255.0.0",
+  network => "172.17.0.0",
+  primary => "eth0"
+}.[0m
+[0;36mDebug: Facter: resolving disk facts.[0m
+[0;36mDebug: Facter: fact "blockdevice_sdd_vendor" has resolved to "Msft".[0m
+[0;36mDebug: Facter: fact "blockdevice_sdd_model" has resolved to "Virtual Disk".[0m
+[0;36mDebug: Facter: fact "blockdevice_sdd_size" has resolved to 1099511627776.[0m
+[0;36mDebug: Facter: fact "blockdevice_sdb_vendor" has resolved to "Msft".[0m
+[0;36mDebug: Facter: fact "blockdevice_sdb_model" has resolved to "Virtual Disk".[0m
+[0;36mDebug: Facter: fact "blockdevice_sdb_size" has resolved to 1073745920.[0m
+[0;36mDebug: Facter: fact "blockdevice_sde_vendor" has resolved to "Msft".[0m
+[0;36mDebug: Facter: fact "blockdevice_sde_model" has resolved to "Virtual Disk".[0m
+[0;36mDebug: Facter: fact "blockdevice_sde_size" has resolved to 1099511627776.[0m
+[0;36mDebug: Facter: fact "blockdevice_sdc_vendor" has resolved to "Msft".[0m
+[0;36mDebug: Facter: fact "blockdevice_sdc_model" has resolved to "Virtual Disk".[0m
+[0;36mDebug: Facter: fact "blockdevice_sdc_size" has resolved to 1099511627776.[0m
+[0;36mDebug: Facter: fact "blockdevice_sda_vendor" has resolved to "Msft".[0m
+[0;36mDebug: Facter: fact "blockdevice_sda_model" has resolved to "Virtual Disk".[0m
+[0;36mDebug: Facter: fact "blockdevice_sda_size" has resolved to 408756224.[0m
+[0;36mDebug: Facter: fact "blockdevices" has resolved to "sdd,sdb,sde,sdc,sda".[0m
+[0;36mDebug: Facter: fact "disks" has resolved to {
+  sda => {
+    model => "Virtual Disk",
+    size => "389.82 MiB",
+    size_bytes => 408756224,
+    vendor => "Msft"
+  },
+  sdb => {
+    model => "Virtual Disk",
+    size => "1.00 GiB",
+    size_bytes => 1073745920,
+    vendor => "Msft"
+  },
+  sdc => {
+    model => "Virtual Disk",
+    size => "1.00 TiB",
+    size_bytes => 1099511627776,
+    vendor => "Msft"
+  },
+  sdd => {
+    model => "Virtual Disk",
+    size => "1.00 TiB",
+    size_bytes => 1099511627776,
+    vendor => "Msft"
+  },
+  sde => {
+    model => "Virtual Disk",
+    size => "1.00 TiB",
+    size_bytes => 1099511627776,
+    vendor => "Msft"
+  }
+}.[0m
+[0;36mDebug: Facter: resolving desktop management interface facts.[0m
+[0;36mDebug: Facter: resolving processor facts.[0m
+[0;36mDebug: Facter: executing command: /usr/bin/uname -p[0m
+[0;36mDebug: Facter: x86_64[0m
+[0;36mDebug: Facter: process exited with status code 0.[0m
+[0;36mDebug: Facter: fact "hardwareisa" has resolved to "x86_64".[0m
+[0;36mDebug: Facter: fact "processorcount" has resolved to 4.[0m
+[0;36mDebug: Facter: fact "physicalprocessorcount" has resolved to 1.[0m
+[0;36mDebug: Facter: fact "processor0" has resolved to "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz".[0m
+[0;36mDebug: Facter: fact "processor1" has resolved to "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz".[0m
+[0;36mDebug: Facter: fact "processor2" has resolved to "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz".[0m
+[0;36mDebug: Facter: fact "processor3" has resolved to "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz".[0m
+[0;36mDebug: Facter: fact "processors" has resolved to {
+  count => 4,
+  isa => "x86_64",
+  models => [
+    "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz",
+    "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz",
+    "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz",
+    "Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz"
+  ],
+  physicalcount => 1
+}.[0m
+[0;36mDebug: Facter: /sys/class/dmi cannot be accessed: using dmidecode to query DMI information.[0m
+[0;36mDebug: Facter: executing command: dmidecode[0m
+[0;36mDebug: Facter: dmidecode was not found on the PATH.[0m
+[0;36mDebug: Facter: resolving uptime facts.[0m
+[0;36mDebug: Facter: fact "uptime_seconds" has resolved to 2668.[0m
+[0;36mDebug: Facter: fact "uptime_hours" has resolved to 0.[0m
+[0;36mDebug: Facter: fact "uptime_days" has resolved to 0.[0m
+[0;36mDebug: Facter: fact "uptime" has resolved to "0:44 hours".[0m
+[0;36mDebug: Facter: fact "system_uptime" has resolved to {
+  days => 0,
+  hours => 0,
+  seconds => 2668,
+  uptime => "0:44 hours"
+}.[0m
+[0;36mDebug: Facter: resolving ssh facts.[0m
+[0;36mDebug: Facter: ssh_host_rsa_key.pub could not be located.[0m
+[0;36mDebug: Facter: ssh_host_dsa_key.pub could not be located.[0m
+[0;36mDebug: Facter: ssh_host_ecdsa_key.pub could not be located.[0m
+[0;36mDebug: Facter: ssh_host_ed25519_key.pub could not be located.[0m
+[0;36mDebug: Facter: resolving id facts.[0m
+[0;36mDebug: Facter: fact "id" has resolved to "root".[0m
+[0;36mDebug: Facter: fact "gid" has resolved to "root".[0m
+[0;36mDebug: Facter: fact "identity" has resolved to {
+  gid => 0,
+  group => "root",
+  privileged => true,
+  uid => 0,
+  user => "root"
+}.[0m
+[0;36mDebug: Facter: resolving timezone facts.[0m
+[0;36mDebug: Facter: fact "timezone" has resolved to "EAT".[0m
+[0;36mDebug: Facter: resolving file system facts.[0m
+[0;36mDebug: Facter: blkid_get_dev failed: partition attributes are unavailable for '/dev/loop1'.[0m
+[0;36mDebug: Facter: blkid_get_dev failed: partition attributes are unavailable for '/dev/loop2'.[0m
+[0;36mDebug: Facter: blkid_get_dev failed: partition attributes are unavailable for '/dev/loop0'.[0m
+[0;36mDebug: Facter: fact "mountpoints" has resolved to {
+  /dev => {
+    available => "64.00 MiB",
+    available_bytes => 67108864,
+    capacity => "0%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "rw",
+      "nosuid",
+      "size=65536k",
+      "mode=755"
+    ],
+    size => "64.00 MiB",
+    size_bytes => 67108864,
+    used => "0 bytes",
+    used_bytes => 0
+  },
+  /dev/shm => {
+    available => "64.00 MiB",
+    available_bytes => 67108864,
+    capacity => "0%",
+    device => "shm",
+    filesystem => "tmpfs",
+    options => [
+      "rw",
+      "nosuid",
+      "nodev",
+      "noexec",
+      "relatime",
+      "size=65536k"
+    ],
+    size => "64.00 MiB",
+    size_bytes => 67108864,
+    used => "0 bytes",
+    used_bytes => 0
+  },
+  /etc/hostname => {
+    available => "1004.19 GiB",
+    available_bytes => 1078237507584,
+    capacity => "0.26%",
+    device => "/dev/sde",
+    filesystem => "ext4",
+    options => [
+      "rw",
+      "relatime",
+      "discard",
+      "errors=remount-ro",
+      "data=ordered"
+    ],
+    size => "1006.85 GiB",
+    size_bytes => 1081101176832,
+    used => "2.67 GiB",
+    used_bytes => 2863669248
+  },
+  /etc/hosts => {
+    available => "1004.19 GiB",
+    available_bytes => 1078237507584,
+    capacity => "0.26%",
+    device => "/dev/sde",
+    filesystem => "ext4",
+    options => [
+      "rw",
+      "relatime",
+      "discard",
+      "errors=remount-ro",
+      "data=ordered"
+    ],
+    size => "1006.85 GiB",
+    size_bytes => 1081101176832,
+    used => "2.67 GiB",
+    used_bytes => 2863669248
+  },
+  /etc/resolv.conf => {
+    available => "1004.19 GiB",
+    available_bytes => 1078237507584,
+    capacity => "0.26%",
+    device => "/dev/sde",
+    filesystem => "ext4",
+    options => [
+      "rw",
+      "relatime",
+      "discard",
+      "errors=remount-ro",
+      "data=ordered"
+    ],
+    size => "1006.85 GiB",
+    size_bytes => 1081101176832,
+    used => "2.67 GiB",
+    used_bytes => 2863669248
+  },
+  /proc/acpi => {
+    available => "1.89 GiB",
+    available_bytes => 2034659328,
+    capacity => "0%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "ro",
+      "relatime"
+    ],
+    size => "1.89 GiB",
+    size_bytes => 2034659328,
+    used => "0 bytes",
+    used_bytes => 0
+  },
+  /proc/kcore => {
+    available => "64.00 MiB",
+    available_bytes => 67108864,
+    capacity => "0%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "rw",
+      "nosuid",
+      "size=65536k",
+      "mode=755"
+    ],
+    size => "64.00 MiB",
+    size_bytes => 67108864,
+    used => "0 bytes",
+    used_bytes => 0
+  },
+  /proc/keys => {
+    available => "64.00 MiB",
+    available_bytes => 67108864,
+    capacity => "0%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "rw",
+      "nosuid",
+      "size=65536k",
+      "mode=755"
+    ],
+    size => "64.00 MiB",
+    size_bytes => 67108864,
+    used => "0 bytes",
+    used_bytes => 0
+  },
+  /proc/timer_list => {
+    available => "64.00 MiB",
+    available_bytes => 67108864,
+    capacity => "0%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "rw",
+      "nosuid",
+      "size=65536k",
+      "mode=755"
+    ],
+    size => "64.00 MiB",
+    size_bytes => 67108864,
+    used => "0 bytes",
+    used_bytes => 0
+  },
+  /sys/firmware => {
+    available => "1.89 GiB",
+    available_bytes => 2034659328,
+    capacity => "0%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "ro",
+      "relatime"
+    ],
+    size => "1.89 GiB",
+    size_bytes => 2034659328,
+    used => "0 bytes",
+    used_bytes => 0
+  },
+  /sys/fs/cgroup => {
+    available => "1.89 GiB",
+    available_bytes => 2034659328,
+    capacity => "0%",
+    device => "tmpfs",
+    filesystem => "tmpfs",
+    options => [
+      "rw",
+      "nosuid",
+      "nodev",
+      "noexec",
+      "relatime",
+      "mode=755"
+    ],
+    size => "1.89 GiB",
+    size_bytes => 2034659328,
+    used => "0 bytes",
+    used_bytes => 0
+  }
+}.[0m
+[0;36mDebug: Facter: fact "filesystems" has resolved to "btrfs,erofs,ext2,ext3,ext4,iso9660,msdos,squashfs,udf,vfat,xfs".[0m
+[0;36mDebug: Facter: fact "partitions" has resolved to {
+  /dev/loop0 => {
+    backing_file => "/mnt/host/wsl/docker-desktop-data/isocache/entries/docker-wsl-cli.iso/ebab958dd2dae8ad7ad125d608ef1b1e1d02c2f38ab835d378b35a6469cc4b38",
+    size => "446.67 MiB",
+    size_bytes => 468363264
+  },
+  /dev/loop1 => {
+    backing_file => "/mnt/host/wsl/docker-desktop-data/isocache/entries/docker-for-wsl.iso/946d78c439af15268b760849f60fab222320b5bf99fa18605fb9f0bc6d6d5ef0",
+    size => "147.50 MiB",
+    size_bytes => 154660864
+  },
+  /dev/loop2 => {
+    backing_file => "/mnt/host/wsl/docker-desktop-data/isocache/entries/services.iso/f93011cf1b1b335f206104255ec798a541a4cc626c5d6d7664c1eb714d6d1e8b",
+    size => "717.63 MiB",
+    size_bytes => 752488448
+  }
+}.[0m
+[0;36mDebug: Facter: resolving memory facts.[0m
+[0;36mDebug: Facter: fact "memoryfree" has resolved to "2.64 GiB".[0m
+[0;36mDebug: Facter: fact "memoryfree_mb" has resolved to 2699.57.[0m
+[0;36mDebug: Facter: fact "memorysize" has resolved to "3.79 GiB".[0m
+[0;36mDebug: Facter: fact "memorysize_mb" has resolved to 3880.8.[0m
+[0;36mDebug: Facter: fact "swapfree" has resolved to "1.00 GiB".[0m
+[0;36mDebug: Facter: fact "swapfree_mb" has resolved to 1024.[0m
+[0;36mDebug: Facter: fact "swapsize" has resolved to "1.00 GiB".[0m
+[0;36mDebug: Facter: fact "swapsize_mb" has resolved to 1024.[0m
+[0;36mDebug: Facter: fact "memory" has resolved to {
+  swap => {
+    available => "1.00 GiB",
+    available_bytes => 1073741824,
+    capacity => "0%",
+    total => "1.00 GiB",
+    total_bytes => 1073741824,
+    used => "0 bytes",
+    used_bytes => 0
+  },
+  system => {
+    available => "2.64 GiB",
+    available_bytes => 2830700544,
+    capacity => "30.44%",
+    total => "3.79 GiB",
+    total_bytes => 4069318656,
+    used => "1.15 GiB",
+    used_bytes => 1238618112
+  }
+}.[0m
+[0;36mDebug: Facter: resolving load_average facts.[0m
+[0;36mDebug: Facter: fact "load_averages" has resolved to {
+  15m => 0.01,
+  1m => 0.18,
+  5m => 0.07
+}.[0m
+[0;36mDebug: Facter: resolving Xen facts.[0m
+[0;36mDebug: Facter: resolving fips facts.[0m
+[0;36mDebug: Facter: fact "fips_enabled" has resolved to false.[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Facter: custom fact "domain" was not found.[0m
+[mNotice: Compiled catalog for 15e50e5a8aec in environment production in 0.02 seconds[0m
+[0;36mDebug: Creating default schedules[0m
+[0;36mDebug: Loaded state in 0.00 seconds[0m
+[0;36mDebug: Loaded state in 0.00 seconds[0m
+[0;32mInfo: Applying configuration version '1701245592'[0m
+[0;36mDebug: Finishing transaction 11380[0m
+[0;36mDebug: Storing state[0m
+[0;36mDebug: Pruned old state cache entries in 0.00 seconds[0m
+[0;36mDebug: Stored state in 0.01 seconds[0m
+[mNotice: Applied catalog in 0.02 seconds[0m
+[0;36mDebug: Applying settings catalog for sections reporting, metrics[0m
+[0;36mDebug: Finishing transaction 14100[0m
+[0;36mDebug: Received report to process from 15e50e5a8aec[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Processing report from 15e50e5a8aec with processor Puppet::Reports::Store[0m
