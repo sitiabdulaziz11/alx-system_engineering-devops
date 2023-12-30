@@ -2,7 +2,7 @@
 # SSH configuration file for the local SSH client.
 
 Host Alx_server
-  HostName 34.224.62.139
+  HostName 54.87.172.4
   user ubuntu
   identityFile ~/.ssh/school
   PasswordAuthentication no
