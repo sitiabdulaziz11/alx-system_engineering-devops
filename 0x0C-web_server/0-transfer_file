@@ -9,6 +9,9 @@ fi
 file_name=$1
 server_ip=$2
 username=$3
-ssh_private_key_path=$4
+ssh_private_
+ 
+  
+    key_path=$4
 
 scp -o StrictHostKeyChecking=no -i "$ssh_private_key_path" "$file_name" "$username@$server_ip:~/"

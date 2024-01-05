@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# installing Nginx web server on our web-01 server and
+# configures a new Ubuntu machine.
+
+sudo apt update -y
+sudo apt install -y nginx
+sudo service nginx restart
+echo "Hello World!" | tee /var/www/html/index.nginx-debian.html
+
+new_url='server_name _;\n\n\trewrite ^/redirect_me https://www.youtube.com/watch?v=EN3-yutgfASD5 permanent;'
+sudo sed -i "s/server_name _;${new_url}" /etc/nginx/sites-available/default
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
