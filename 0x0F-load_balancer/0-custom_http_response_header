@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#  configure web-02 to be identical to web-01,add a custom Nginx response header
+
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo 'Holberton School' > /var/www/html/index.nginx-debian.html
+sed -i '/listen 80 default_server;/a add_header X-Served-By $host;' /etc/nginx/sites-available/default
+service nginx start
