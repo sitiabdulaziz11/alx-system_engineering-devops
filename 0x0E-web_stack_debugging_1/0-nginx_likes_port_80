@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#  configure web-02 to be identical to web-01,add a custom Nginx response header
+# configure web-02 to be identical to web-01,add a custom Nginx response header.
 
 apt-get -y update
 apt-get -y install nginx
