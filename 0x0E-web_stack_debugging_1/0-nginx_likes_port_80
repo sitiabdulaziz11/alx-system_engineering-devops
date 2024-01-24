@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
-# configure web-02 to be identical to web-01,add a custom Nginx response header.
-ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+# Nginx likes port 80.
+
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 service nginx start
