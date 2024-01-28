@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Bash script that will display information about subdomains.
+# And configuring my domain with www subdomain.
+
+domain_display ()
+{
+   dmn="$1"
+   subdmn="$2"
+   dig "$subdmn.$dmn" | awk '/ANSWER SECTION:/{getline; printf "The subdomain %s is a %s record and points to %s\n", var, $4, $5}' var="$subdomain"
+}
+
+for subdmn in "www" "lb-01" "web-01" "web-02"
+do
+if [-z "$2" ] || [ "$2" == "$subdmn" ] ;
+then
+   domain_display "$2" "$subdmn"
+ fi
+done
