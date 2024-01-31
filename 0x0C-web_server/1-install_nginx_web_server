@@ -4,5 +4,5 @@
 
 apt update -y
 apt install -y nginx
-echo "Hello World!" | tee /var/www/html/index.html
+echo "[\"Hello World!\"]" | tee /var/www/html/index.html
 service nginx restart
