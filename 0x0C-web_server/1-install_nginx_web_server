@@ -2,7 +2,7 @@
 # installing Nginx web server on our web-01 server and
 # configures a new Ubuntu machine.
 
-sudo apt update -y
-sudo apt install -y nginx
-echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
-sudo service nginx restart
+apt update -y
+apt install -y nginx
+echo "Hello World!" | tee /var/www/html/index.html
+service nginx restart
