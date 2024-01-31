@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # installing Nginx web server on our web-01 server and
-# configures a new Ubuntu machine.
+# configures a new Ubuntu machine on the server.
 
 apt update -y
 apt install -y nginx
