@@ -6,6 +6,5 @@ sudo apt update -y
 sudo apt install -y nginx
 sudo service nginx restart
 echo "Hello World!" | tee /var/www/html/index.html
-
 sudo sed -i "s|server_name _;|server_name _;\n\trewrite ^/redirect_me https://github.com/sitiabdulaziz11 permanent;|" /etc/nginx/sites-available/default
 service nginx restart
