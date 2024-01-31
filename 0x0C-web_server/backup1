@@ -4,5 +4,10 @@
 
 apt update -y
 apt install -y nginx
-echo "Hello World!" | tee /var/www/html/index.nginx-debian.html
+server {
+    listen 80;
+    root /var/www/html;
+    index index.html;
+}
+echo "Hello World!" | tee /var/www/html/index.html
 service nginx restart
