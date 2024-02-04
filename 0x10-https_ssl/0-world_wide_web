@@ -2,17 +2,16 @@
 # Bash script that will display information about subdomains.
 # And configuring my domain with www subdomain.
 
-domain_display ()
-{
-	dmn="$1"
-	subdmn="$2"
-	dig "$subdmn.$dmn" | awk '/ANSWER SECTION:/{getline; printf "The subdomain %s is a %s record and points to %s\n", var, $4, $5}' var="$subdomain"
+domain_display () {
+ dig "$1" | grep -A1 'ANSWER SECTION:' | sed -r "s/$1./$2/g" | awk -F" " ' NR==2 { print "The subdomain " $1 " is a " $4 " record and points to " $5 }'
 }
 
-for subdmn in "www" "lb-01" "web-01" "web-02"
-do
-	if [ -z "$2" ] || [ "$2" == "$subdmn" ] ;
-	then
-		domain_display "$2" "$subdmn"
-	fi
-done
+if [ "$#" -eq 2 ]
+then
+	domain_display "$2.$1" "$2"
+else
+	domain_display"www.$1" "www"
+	domain_display "lb-01.$1" "lb-01"
+	domain_display "web-01.$1" "web-01"
+	domain_display "web-02.$1" "web-02"
+fi
