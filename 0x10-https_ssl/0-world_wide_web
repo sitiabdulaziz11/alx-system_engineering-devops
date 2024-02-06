@@ -10,7 +10,7 @@ if [ "$#" -eq 2 ]
 then
 	domain_display "$2.$1" "$2"
 else
-	domain_display"www.$1" "www"
+	domain_display "www.$1" "www"
 	domain_display "lb-01.$1" "lb-01"
 	domain_display "web-01.$1" "web-01"
 	domain_display "web-02.$1" "web-02"
