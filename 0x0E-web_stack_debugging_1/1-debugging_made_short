@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #configure nginx server
-ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service nginx start
-kill "$(pgrep 'nginx' | head -1)"
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
+sudo kill "$(pgrep 'nginx' | head -1)"
