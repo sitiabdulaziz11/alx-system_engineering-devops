@@ -32,3 +32,22 @@ defaults
         errorfile 502 /etc/haproxy/errors/502.http
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
+
+#--mygoal.tech-params-begin--
+backend mygoal.tech-backend
+        balance roundrobin
+        server 158534-web-01 54.87.172.4:80 check
+        server 158534-web-02 100.26.209.47:80 check
+
+frontend mygoal.tech-frontend
+        bind *:80
+        mode http
+        http-request redirect scheme https code 301 unless { ssl_fc }
+        http-request set-header X_Forwarded-Proto http
+        default_backend mygoal.tech-backend
+
+frontend mygoal.tech-frontend-https
+        bind *:443 ssl crt /etc/haproxy/certs/www.mygoal.tech.pem
+        http-request set-header X-Forwarded-Proto https
+        default_backend mygoal.tech-backend
+#--mygoal.tech-params-end--
