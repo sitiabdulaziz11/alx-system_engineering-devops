@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
- REST API, for a given employee ID, returns information
+ REST API for a given employee ID, returns information
  about TODO list progress.
 """
 
