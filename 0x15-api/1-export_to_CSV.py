@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
- Python script that export data in the CSV format.
+ Python script that export TODO data in the CSV format.
  """
 
 import csv
