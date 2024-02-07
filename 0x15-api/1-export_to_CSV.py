@@ -11,7 +11,7 @@ if __name__ == '__main__':
     user = sys.argv[1]
     url_user = 'https://jsonplaceholder.typicode.com/users/' + user
     request = requests.get(url_user)
-    
+
     user_name = request.json().get('username')
     task = url_user + '/todos'
     request = requests.get(task)
